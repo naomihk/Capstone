@@ -6,7 +6,7 @@ background-color: white;
 
 
 h1 {
-font-size: 1.6em;
+font-size: 2em;
 font-weight: bold;
 
 }
@@ -29,34 +29,72 @@ a {
 
 /*Header*/
 
-header .container {
+
+nav {
   display: flex;
   align-items: center;
+  height: 4em;
   justify-content: space-between;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+header .container img {
+  display: flex;
+  height: 2em;
+  padding-left: 1.5em;
+}
+
+header .container span {
+  text-transform: uppercase;
+  padding-left: 1em
+}
+
+header .container span b {
+  font-weight: bold;
+}
+
+.menu ul {
+  margin-right: 1.5em;
 }
 
 .menu li {
   display: inline;
-  padding: 0 1rem;
-}
-
-.menu li img {
-  height: 1.5rem;
-}
-
-header .container span {
-  font-size: 2em;
-  text-transform: uppercase;
+  padding: .5em;
 }
 
 
 
 /*Banner*/
 
+.banner {
+  background-color: #DCDCDC;
+  display: flex;
+}
+
+.banner img {
+  width: 60%;
+  padding: 2em 1.5em;
+}
+
+.banner .text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
 .button a {
   color: white;
   background-color: black;
+  padding-top: .5em;
+  padding-bottom: .5em;
 }
+
+
 
 
 /*Practice*/
