@@ -6,14 +6,14 @@ background-color: white;
 
 
 h1 {
-font-size: 3em;
+font-size:2em;
 font-weight: bold;
-
 }
 
 h2{
 font-size: 1.4em;
 font-weight: bold;
+padding: 2em 0 1.5em 0;
 }
 
 h3{
@@ -21,8 +21,17 @@ font-size: 1.2em;
 font-weight: bold;
 }
 
+span {
+  padding-top: .5em;
+}
+
+a {
+  padding-top: .5em;
+}
+
 .container {
-  width: auto 0;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
 .container:nth-child(2n+2) {
@@ -73,24 +82,28 @@ header .container span b {
 
 /*Banner*/
 
-.Banner {
+.column {
   display: flex;
-  flex-direction: row;
 }
 
-
-.banner-image img {
-  display: flex;
-  vertical-align: middle;
+.first {
+  padding: 2em 1.5em;
   width: 60%;
 }
 
+.first img {
+  width: 100%;
+}
 
-.side-text {
+.second {
   display: flex;
   flex-direction: column;
+  width: 40%;
   justify-content: center;
-  vertical-align: middle;
+}
+
+.second h3 {
+  padding-top: 24px;
 }
 
 .button {
@@ -108,16 +121,47 @@ header .container span b {
 }
 
 
-
-
-
 /*Practice*/
 
 
 
 
-/*learn*/
+/*Courses*/
 
+.container h2 {
+text-align: center;
+padding: 2em 0;
+}
+
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 3.5em 1em 3.5em;
+}
+
+.course {
+  display: flex;
+  width: 25%;
+  background-color: white;
+  flex-direction: column;
+  margin: 1em;
+}
+
+
+.course img {
+  max-width: 100%;
+}
+
+.course .description {
+margin: 1em;
+
+}
+
+.description h4 {
+  text-transform: uppercase;
+  padding: .5em 0;
+}
 
 
 /*Exhibit*/
@@ -125,7 +169,7 @@ header .container span b {
 
 /*Footer*/
 
-footer {
+footer .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
