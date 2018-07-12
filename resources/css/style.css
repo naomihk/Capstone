@@ -2,6 +2,7 @@ html {
 font-size: 16px;
 font-family: "Arial", "Helvetica", sans-serif;
 background-color: white;
+
 }
 
 
@@ -13,7 +14,7 @@ font-weight: bold;
 h2{
 font-size: 1.4em;
 font-weight: bold;
-padding: 2em 0 1.5em 0;
+padding: 2em 0;
 }
 
 h3{
@@ -23,11 +24,16 @@ font-weight: bold;
 
 span {
   padding-top: .5em;
+  padding-bottom: .5em;
+  line-height: 1.2em;
+
 }
 
-a {
-  padding-top: .5em;
+p {
+line-height: 1.2em;
 }
+
+
 
 .container {
   max-width: 1024px;
@@ -36,6 +42,10 @@ a {
 
 .container:nth-child(2n+2) {
   background-color: #DCDCDC;
+}
+
+div {
+  border: 1px solid green;
 }
 
 
@@ -95,7 +105,7 @@ header .container span b {
   width: 100%;
 }
 
-.second {
+.column .second {
   display: flex;
   flex-direction: column;
   width: 40%;
@@ -119,6 +129,59 @@ header .container span b {
   background-color: white;
   color: black;
 }
+
+/* test */
+.equal-height-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.first {
+  background-color: #FFF;
+  padding: 20px;
+}
+
+.second {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.second-a {
+  display: flex;
+}
+
+.second-a img {
+width: 35%;
+height: 35%;
+padding: 1em;
+}
+
+.second-a .description {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  justify-content: center;
+}
+
+.second-a a {
+  text-decoration: none;
+  color: #0D9ECA;
+  font-weight: bold;
+}
+
+.second-a h3 {
+  padding-top: 0;
+}
+
+
+
+.second-a:nth-child(1n+3){
+  background-color: #DCDCDC;
+}
+
+
 
 
 /*Practice*/
@@ -165,6 +228,10 @@ margin: 1em;
 
 
 /*Exhibit*/
+
+video {
+  width: 100%;
+}
 
 
 /*Footer*/
