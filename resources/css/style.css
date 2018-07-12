@@ -13,9 +13,9 @@ padding-bottom: 1em;
 }
 
 h2 {
-font-size: 1.6em;
+font-size: 1.8em;
 font-weight: bold;
-padding: 2em 0;
+padding: 1.5em 0;
 }
 
 h3 {
@@ -64,6 +64,48 @@ nav div {
   align-items: center;
 }
 
+.mobile-nav {
+  display: none;
+}
+.mobile-course {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 600px) {
+  .menu ul {
+    display: none;
+  }
+
+.logo {
+  display: none;
+}
+
+  .mobile-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .container .courses {
+    display: none;
+  }
+
+  .mobile-course {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container:nth-child(2n) {
+    background-color: white;
+  }
+
+
+}
+
 header .container img {
   display: flex;
   height: 2em;
@@ -106,7 +148,7 @@ header .container span b {
 }
 
 .first h2 {
-  padding-bottom: 1.5em;
+  padding-top: 2em;
 }
 
 .column .second {
@@ -141,11 +183,12 @@ header .container span b {
 }
 
 
-.second {
+.equal-height-container .second {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   width: 40%;
+  padding-top: 2em;
 }
 
 .second-a {
@@ -179,7 +222,13 @@ padding: 1em;
   padding: 2em 0;
 }
 
+
+
 /*Exhibit*/
+
+.first h3 {
+  padding-top: 1.5em;
+}
 
 video {
   width: 100%;
@@ -200,7 +249,7 @@ padding: 2em 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 0 3.5em 1em 3.5em;
+  padding: 0 4.5em;
 }
 
 .course {
@@ -208,7 +257,7 @@ padding: 2em 0;
   width: 25%;
   background-color: white;
   flex-direction: column;
-  margin: 1em;
+  margin: 0.5em;
 }
 
 .course img {
@@ -223,15 +272,22 @@ margin: 1em;
   text-transform: uppercase;
   padding: .5em 0;
 }
+/*Mobile button*/
+.mobile-course h3 {
+padding: 1em 0 1.5em 1em;
+margin: .25em;
+background-color: #DCDCDC;
+}
 
 /*Footer*/
 
 footer .container {
   display: flex;
-  align-items: center;
+
   justify-content: space-between;
   height: 4em;
 }
+
 
 footer .copyright {
   padding-left: 1.5em;
@@ -240,6 +296,7 @@ footer .copyright {
 
 .navigation ul {
   margin-right: 1.5em;
+  padding-top: 1em;
 }
 
 .navigation li {
