@@ -9,31 +9,33 @@ background-color: white;
 h1 {
 font-size:2em;
 font-weight: bold;
+padding-bottom: 1em;
 }
 
-h2{
-font-size: 1.4em;
+h2 {
+font-size: 1.6em;
 font-weight: bold;
 padding: 2em 0;
 }
 
-h3{
-font-size: 1.2em;
+h3 {
+font-size: 1.1em;
 font-weight: bold;
+text-align: left;
+padding-bottom: .5em;
 }
 
 span {
-  padding-top: .5em;
-  padding-bottom: .5em;
   line-height: 1.2em;
-
 }
 
 p {
 line-height: 1.2em;
 }
 
-
+a {
+  padding-top: .5em;
+}
 
 .container {
   max-width: 1024px;
@@ -50,8 +52,6 @@ div {
 
 
 /*Header*/
-
-
 nav {
   display: flex;
   align-items: center;
@@ -98,11 +98,15 @@ header .container span b {
 
 .first {
   padding: 2em 1.5em;
-  width: 60%;
+  flex-basis: 60%;
 }
 
 .first img {
   width: 100%;
+}
+
+.first h2 {
+  padding-bottom: 1.5em;
 }
 
 .column .second {
@@ -112,9 +116,7 @@ header .container span b {
   justify-content: center;
 }
 
-.second h3 {
-  padding-top: 24px;
-}
+/*Black Button*/
 
 .button {
   background-color: black;
@@ -130,22 +132,20 @@ header .container span b {
   color: black;
 }
 
-/* test */
+/*Practice*/
+
 .equal-height-container {
   max-width: 1024px;
   margin: 0 auto;
   display: flex;
 }
 
-.first {
-  background-color: #FFF;
-  padding: 20px;
-}
 
 .second {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  width: 40%;
 }
 
 .second-a {
@@ -175,19 +175,19 @@ padding: 1em;
   padding-top: 0;
 }
 
-
-
-.second-a:nth-child(1n+3){
-  background-color: #DCDCDC;
+.employee {
+  padding: 2em 0;
 }
 
+/*Exhibit*/
 
+video {
+  width: 100%;
+}
 
-
-/*Practice*/
-
-
-
+.grey {
+  background-color: #DCDCDC;
+}
 
 /*Courses*/
 
@@ -211,28 +211,18 @@ padding: 2em 0;
   margin: 1em;
 }
 
-
 .course img {
   max-width: 100%;
 }
 
 .course .description {
 margin: 1em;
-
 }
 
 .description h4 {
   text-transform: uppercase;
   padding: .5em 0;
 }
-
-
-/*Exhibit*/
-
-video {
-  width: 100%;
-}
-
 
 /*Footer*/
 
