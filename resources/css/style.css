@@ -129,9 +129,11 @@ padding: 2em 1em;
 
 .equal-height-container .second.practice {
   width: 100%;
-  padding-top: 0;
   justify-content: center;
+}
 
+.second.practice {
+  padding: 1em 1em 0 1em;
 }
 
 .desktop-image {
@@ -142,13 +144,14 @@ padding: 2em 1em;
   display: flex;
 }
 
+
 .second-a {
 flex-direction: column;
 }
 
 .second.practice .second-a img {
   width: 100%;
-  padding: 0;
+  padding: 0 1em;
   height: auto;
   align-self: center;
 }
@@ -156,6 +159,10 @@ flex-direction: column;
 .second.practice .second-a .description {
 width: 100%;
 padding: 4em 1em;
+}
+
+.second-a.grey {
+  background-color: #DCDCDC;
 }
 
   /*Mobile Courses*/
@@ -167,10 +174,11 @@ padding: 4em 1em;
   .mobile-course {
     display: flex;
     flex-direction: column;
+    padding-bottom: 1.5em;
   }
 
   .container:nth-child(2n) {
-    background-color: white;
+    background-color: #white;
   }
 
     /*Mobile Exhibit*/
@@ -200,6 +208,8 @@ video {
   padding: 0;
   flex-basis: 100%;
 }
+
+
 
 
 /*Mobile Footer*/
@@ -355,11 +365,11 @@ video {
   width: 100%;
 }
 
-
-
 .grey {
   background-color: #E0FFFF;
 }
+
+
 
 /*Courses*/
 
