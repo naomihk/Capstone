@@ -1,8 +1,8 @@
 html {
 font-size: 16px;
 font-family: "Arial", "Helvetica", sans-serif;
-background-color: white;
-
+background-color: #DCDCDC;
+color: #191970;
 }
 
 
@@ -30,7 +30,7 @@ span {
 }
 
 p {
-line-height: 1.2em;
+  line-height: 1.2em;
 }
 
 a {
@@ -43,12 +43,13 @@ a {
 }
 
 .container:nth-child(2n+2) {
-  background-color: #DCDCDC;
+  background-color: #E0FFFF;
 }
 
-div {
+/*div {
   border: 1px solid green;
-}
+}*/
+
 
 
 /*Header*/
@@ -71,24 +72,93 @@ nav div {
   display: none;
 }
 
-@media only screen and (max-width: 768px) {
 
-}
 
 @media only screen and (max-width: 600px) {
-  .menu ul {
+/*Mobile Navigation*/
+
+  .menu .desktop-nav {
     display: none;
   }
 
-.logo {
+ nav .logo {
   display: none;
 }
 
-  .mobile-nav {
+.menu {
+  width: 100%;
+  height: 4em;
+  justify-content: space-around;
+}
+
+.mobile-nav {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
   }
+
+  /*Mobile Banner*/
+.column.banner {
+  flex-direction: column;
+
+}
+
+.column.banner .first {
+  padding: 0;
+}
+
+.column.banner .second {
+  width: 100%;
+
+}
+
+.second.text {
+padding: 2em 1em;
+}
+
+.second .button {
+  align: center;
+  margin-bottom: 2em;
+  margin-top: 1.5em;
+  width: 90%;
+}
+
+  /*Mobile Practice*/
+
+.first.practice {
+    display: none;
+  }
+
+.equal-height-container .second.practice {
+  width: 100%;
+  padding-top: 0;
+  justify-content: center;
+
+}
+
+.desktop-image {
+  display: none;
+}
+
+.second-a .mobile-image {
+  display: flex;
+}
+
+.second-a {
+flex-direction: column;
+}
+
+.second.practice .second-a img {
+  width: 100%;
+  padding: 0;
+  height: auto;
+  align-self: center;
+}
+
+.second.practice .second-a .description {
+width: 100%;
+padding: 4em 1em;
+}
+
+  /*Mobile Courses*/
 
   .container .courses {
     display: none;
@@ -103,8 +173,51 @@ nav div {
     background-color: white;
   }
 
+    /*Mobile Exhibit*/
+
+.first.thesis .text-content {
+  display: none;
+}
+
+.equal-height-container .second.thesis {
+  display: none;
+}
+
+.equal-height-container {
+  width: 100%;
+}
+
+.equal-height-container .first.thesis {
+  width: 100%;
 
 }
+
+video {
+  width: 100%;
+}
+
+.first.thesis {
+  padding: 0;
+  flex-basis: 100%;
+}
+
+
+/*Mobile Footer*/
+
+.navigation ul {
+  display: none;
+}
+
+.copyright {
+  width: 100%;
+  font-size: 1em;
+}
+footer {
+
+}
+}
+
+/*Mobile End*/
 
 header .container img {
   display: flex;
@@ -161,7 +274,7 @@ header .container span b {
 /*Black Button*/
 
 .button {
-  background-color: black;
+  background-color: #191970;
   color: white;
   text-align: center;
   padding: .5em 0;
@@ -201,6 +314,10 @@ height: 35%;
 padding: 1em;
 }
 
+.mobile-image {
+  display: none;
+}
+
 .second-a .description {
   display: flex;
   flex-direction: column;
@@ -216,6 +333,10 @@ padding: 1em;
 
 .second-a h3 {
   padding-top: 0;
+}
+
+.second.practice {
+  padding-top: 1em;
 }
 
 .employee {
@@ -234,8 +355,10 @@ video {
   width: 100%;
 }
 
+
+
 .grey {
-  background-color: #DCDCDC;
+  background-color: #E0FFFF;
 }
 
 /*Courses*/
@@ -249,7 +372,7 @@ padding: 2em 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 0 4.5em;
+  margin: 0 4.5em;
 }
 
 .course {
@@ -283,7 +406,6 @@ background-color: #DCDCDC;
 
 footer .container {
   display: flex;
-
   justify-content: space-between;
   height: 4em;
 }

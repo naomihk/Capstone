@@ -21,34 +21,34 @@
       </div>
 
       <div class="menu">
-        <ul>
+        <ul class="desktop-nav">
           <li><a href="#campus"></a>On campus</li>
-          <li><a href="#campus"></a>Online</li>
-          <li><a href="#campus"></a>Our companies</li>
-          <li><a href="#campus"></a>Sign in</li>
+          <li><a href="#online"></a>Online</li>
+          <li><a href="#companies"></a>Our companies</li>
+          <li><a href="#sign"></a>Sign in</li>
         </ul>
-      </div>
+
 
       <ul class="mobile-nav">
-        <li><img src="resources\images\ic-logo.svg" alt="Colmar Academy Logo"> </li>
-        <li><img src="resources\images\ic-on-campus.svg" alt="On Campus Logo"> </li>
-        <li><img src="resources\images\ic-online.svg" alt="Online Logo"> </li>
-        <li><img src="resources\images\ic-login.svg" alt="Sign In Logo"></li>
+        <li><a href="#campus"></a> <img src="resources\images\ic-logo.svg" alt="Colmar Academy Logo"> </li>
+        <li><a href="#online"></a> <img src="resources\images\ic-on-campus.svg" alt="On Campus Logo"> </li>
+        <li><a href="#companies"></a> <img src="resources\images\ic-online.svg" alt="Online Logo"> </li>
+        <li><a href="#sign"></a> <img src="resources\images\ic-login.svg" alt="Sign In Logo"></li>
       </ul>
-
+</div>
   </nav>
 </header>
 
 
 <!--Banner-->
 <div class="container">
-  <div class="column">
+  <div class="column banner">
 
     <div class="first">
       <img src="./resources/images/banner.jpg" alt="Students studying">
     </div>
 
-    <div class="second">
+    <div class="second text">
       <h1>Learn something new everyday</h1>
       <h3>Loren ipsum dolor sit amet, consectetur adipiscing elit.</h3>
 
@@ -64,7 +64,7 @@
 <!--Practice-->
 
 <div class="equal-height-container">
-      <div class="first">
+      <div class="first practice">
         <img src="./resources/images/information-main.jpg" alt="Man reading a book">
 
         <div class="text-content">
@@ -76,9 +76,11 @@
         </div>
       </div>
 
-      <div class="second" id="orientation">
+      <div class="second practice">
         <div class="second-a">
-          <img src="./resources/images/information-orientation.jpg" alt="Arial view of people on a path">
+          <img src="./resources/images/information-orientation.jpg" alt="Arial view of students on a path" class="desktop-image">
+          <img src="resources\images\information-orientation-mobile.jpg" alt="Arial view of students on a path" class="mobile-image">
+
           <div class="description">
             <h3>Orientation date</h3>
             <span>Tue 10/11 & Wed 10/12: 8am-3pm</span>
@@ -87,7 +89,8 @@
         </div>
 
         <div class="second-a">
-          <img src="./resources/images/information-campus.jpg" alt="Classroom with map">
+          <img src="./resources/images/information-campus.jpg" alt="Classroom with map" class="desktop-image">
+          <img src="resources\images\information-campus-mobile.jpg" alt="Arial view of students on a path" class="mobile-image">
           <div class="description">
             <h3>Our campus</h3>
             <span>Find out which campus is close to you</span>
@@ -96,7 +99,8 @@
         </div>
 
         <div class="second-a grey">
-          <img src="./resources/images/information-guest-lecture.jpg" alt="Bearded professor">
+          <img src="./resources/images/information-guest-lecture.jpg" alt="Bearded professor" class="desktop-image">
+                <img src="resources\images\information-guest-lecture-mobile.jpg" alt="Arial view of students on a path" class="mobile-image">
           <div class="description">
             <h3>Our guest lecture</h3>
             <span>Join the keynote with Oliver Sack about music in medical treatment</span>
@@ -188,7 +192,7 @@
   <h2>Thesis exhibit</h2>
   <div class="equal-height-container">
 
-    <div class="first">
+    <div class="first thesis">
       <video src="resources\videos\thesis.mp4" autoplay></video>
 
       <div class="text-content">
@@ -197,7 +201,7 @@
       </div>
     </div>
 
-    <div class="second">
+    <div class="second thesis">
       <div class="second-a grey">
         <img src="./resources/images/thesis-fisma.jpg" alt="Arial view of people on a path">
         <div class="description">
@@ -224,7 +228,7 @@
 <!--Footer-->
   <footer>
     <div class="container">
-      <div class="copyright">&copy 2018 Colmer Academy All rights Resereved</div>
+      <span class="copyright">&copy 2018 Colmer Academy All rights Resereved</span>
 
       <div class="navigation">
         <ul>
